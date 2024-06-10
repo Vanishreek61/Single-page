@@ -210,18 +210,26 @@ header.sticky {
 /* Media Queries */
 @media (max-width: 768px) {
     header .navmenu {
-        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
         flex-direction: column;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }.navmenu a{
+        display: block;
+        margin: 18px 0;
+
     }
 
+
     header .navmenu.open {
-       right: 0;
+        display: flex;
     }
 
     header .bx-menu {

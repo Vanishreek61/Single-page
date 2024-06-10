@@ -221,7 +221,7 @@ header.sticky {
     }
 
     header .navmenu.open {
-        display: flex;
+       right: 0;
     }
 
     header .bx-menu {

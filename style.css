@@ -208,8 +208,8 @@ header.sticky {
     color: #FF3E41;
 }
 /* Media Queries */
-@media (max-width: 768px) {
-    header .navmenu {
+@media (max-width: 750px) {
+    .navmenu{
         position: absolute;
         top: 100%;
         right: -100%;
@@ -221,22 +221,17 @@ header.sticky {
         align-items: center;
         padding: 120px 30px;
         transition: all .42s;
-    }.navmenu a{
+    }
+    .navmenu a{
         display: block;
         margin: 18px 0;
 
     }
+    .navmenu.open{
+        right: 0;
 
-
-    header .navmenu.open {
-        display: flex;
     }
 
-    header .bx-menu {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-    }
 
     .products {
         flex-direction: column;
